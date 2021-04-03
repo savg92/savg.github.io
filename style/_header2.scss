@@ -1,0 +1,136 @@
+@import "_variables";
+
+header{
+    width: 100%;
+    margin: 0rem;
+    padding: .5rem 1rem 0rem 1rem;
+    display: flex;
+    position:fixed;
+    z-index: 1;
+    @extend %primary-background-color;
+    .logo{
+        margin: 0px;
+        padding: 0px;
+        width: 36px;
+    }
+    .dropdown-menu{
+        label {
+            display: flex;
+            flex-direction: column;
+            width: 1.5rem;
+            user-select: none;
+            cursor: pointer;
+            span {
+                background: black;
+                border-radius: 10px;
+                height: 3px;
+                margin: 2px 0;
+                transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+            }
+        }
+        span {
+            &:nth-of-type(1) {
+                width: 100%;
+            }
+            &:nth-of-type(2) {
+                width: 100%;
+            }
+            &:nth-of-type(3) {
+                width: 100%;
+            }
+        }
+        input[type="checkbox"] {
+            display: none;
+            &:checked {
+                ul{
+                    display: flex;
+                }
+                ~ {
+                    span {
+                        &:nth-of-type(1) {
+                            transform-origin: bottom;
+                            transform: rotatez(45deg) translate(4.5px,4.5px);
+                        }
+                        &:nth-of-type(2) {
+                            transform-origin: top;
+                            transform: rotatez(-45deg);
+                        }
+                        &:nth-of-type(3) {
+                            transform-origin: bottom;
+                            width: 50%;
+                            transform: translate(3px,-11px) rotatez(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        nav{
+            width: 100%;
+            ul {
+                margin: 0px 0px 0px 0px;
+                padding: 0px;
+                list-style-type: none;
+                background: #0000EC;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                li{
+                    padding: 0.5rem;
+                    width: 100%;
+                    a{
+                        @include headerText;
+                    }
+                    a:link{
+                        text-decoration: none;
+                    }
+                    a:visited{
+                        font-family: "IBM Plex Mono";
+                        font-size: 16px;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: 28px;
+                    }
+                    a:hover{
+                        @extend %headerTextHover;
+                    }
+                    a:active{
+                        @extend %headerTextActive;
+                    }
+                }
+                li:hover {
+                    background: rgba(0, 0, 0, 0.3);
+                }
+                
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 800px){
+    header{
+        padding: 22px 100px;
+        .dropdown-menu{
+            nav{
+                padding: 0rem;
+                ul{
+                    background: #752d2d;
+                    flex-direction: row;
+                    li{
+                        font-family: "IBM Plex Mono";
+                        font-size: 16px;
+                        color: #060A24;
+                        letter-spacing: 0;
+                        line-height: 28px;
+                        a{
+                            color: #060A24;
+                            font-family: "IBM Plex Mono";
+                            font-size: 16px;
+                            letter-spacing: 0;
+                            line-height: 28px;
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}
