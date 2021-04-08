@@ -383,7 +383,7 @@ header .dropdown-menu .menu a:active, header .nav-bar a:active {
 }
 
 .episodios .episodes .episode {
-  max-width: 484px;
+  max-width: 584px;
   height: 232px;
   margin: 10px;
 }
@@ -675,7 +675,7 @@ header .dropdown-menu .menu a:active, header .nav-bar a:active {
     letter-spacing: 0;
   }
   .episodios .episodes {
-    margin: 0px 8%;
+    margin: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -689,7 +689,7 @@ header .dropdown-menu .menu a:active, header .nav-bar a:active {
         flex-wrap: wrap;
   }
   .episodios .episodes .episode {
-    max-width: 484px;
+    width: 564px;
     height: 232px;
     margin: 10px;
     padding-bottom: 10px;
@@ -712,7 +712,7 @@ header .dropdown-menu .menu a:active, header .nav-bar a:active {
     width: fit-content;
   }
   .nosotros .nosotrosImg img {
-    width: 457.6px;
+    width: 447.6px;
   }
   .nosotros .nosotrosBox {
     display: -webkit-box;
@@ -731,9 +731,7 @@ header .dropdown-menu .menu a:active, header .nav-bar a:active {
     letter-spacing: 0;
   }
   .nosotros .nosotrosBox .nosotrosContent {
-    max-width: 464px;
-    font-size: 16px;
-    line-height: 24px;
+    max-width: 400px;
     font-family: 'IBM Plex Mono';
     font-size: 16px;
     color: #060A24;

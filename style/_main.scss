@@ -71,7 +71,7 @@
         justify-content: center;
         flex-wrap: wrap;
         .episode{
-            width: 584px;
+            max-width: 584px;
             height: 232px;
             margin: 10px;
         }
@@ -250,13 +250,13 @@
             @include title-secondary-desktop;
         }
         .episodes{
-            margin: 0px 8%;
+            margin: 0px;
             display: flex;
             justify-content: space-between;
             justify-content: center;
             flex-wrap: wrap;
             .episode{
-                width: 584px;
+                width: 564px;
                 height: 232px;
                 margin: 10px;
                 padding-bottom: 10px;
@@ -272,7 +272,7 @@
             position: relative;
             width: fit-content;
             img{
-                width: 457.6px;
+                width: 447.6px;
             }
         }
         .nosotrosBox{
@@ -283,9 +283,7 @@
                 @include title-primary-desktop;
             }
             .nosotrosContent{
-                max-width: 464px;
-                font-size: 16px;
-                line-height: 24px;
+                max-width: 400px;
                 @include text-content-desktop;
             }
         }
