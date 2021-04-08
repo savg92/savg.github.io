@@ -383,7 +383,7 @@ header .dropdown-menu .menu a:active, header .nav-bar a:active {
 }
 
 .episodios .episodes .episode {
-  width: 584px;
+  max-width: 484px;
   height: 232px;
   margin: 10px;
 }
@@ -689,7 +689,7 @@ header .dropdown-menu .menu a:active, header .nav-bar a:active {
         flex-wrap: wrap;
   }
   .episodios .episodes .episode {
-    width: 584px;
+    max-width: 484px;
     height: 232px;
     margin: 10px;
     padding-bottom: 10px;
